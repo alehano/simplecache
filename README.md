@@ -1,5 +1,5 @@
 # Simple Cache
-Simple in memory type safe cache in Go (golang)
+Simple in-memory type safe cache in Go (golang)
 
 
 Usage:

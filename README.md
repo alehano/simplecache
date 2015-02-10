@@ -13,9 +13,8 @@ type MyCache struct {
 }
 
 // Init it
-mc := &MyCache{}
+mc := &MyCache{data: make(map[string]MyType)}
 mc.Init()
-mc.data = make(map[string]MyType)
 
 // Use it
 if(mc.IsValid("key")) {

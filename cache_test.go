@@ -14,9 +14,8 @@ func TestCache(t *testing.T) {
         data map[string]MyType
     }
 
-    mc := &MyCache{}
+    mc := &MyCache{data: make(map[string]MyType)}
     mc.Init()
-    mc.data = make(map[string]MyType)
 
     if(mc.IsValid("key")) {
         t.Error("Shouldn't be set")

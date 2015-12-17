@@ -1,8 +1,12 @@
 # Simple Cache
-Simple in-memory type safe cache in Go (golang).
 
-It's not safe for concurrent use. You have to care of it by yourself.
-
+Simple wrapper for any struct adding cache functionallity.
+Add methods 
+```
+.IsValid("key")
+.SetExpireDur("key", time.Second * 60)
+.Invalidate("key")
+```
 
 Usage:
 

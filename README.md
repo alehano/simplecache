@@ -1,11 +1,13 @@
 # Simple Cache
 
-Simple wrapper for any struct adding cache functionallity.
-Add methods 
+Simple wrapper for any struct that add cache functionallity.
+
+Methods: 
 ```
-.IsValid("key")
-.SetExpireDur("key", time.Second * 60)
-.Invalidate("key")
+IsValid(string) bool
+SetExpireDur(string, time.Duration)
+SetExpireTime(string, time.Time)
+Invalidate(string)
 ```
 
 Usage:

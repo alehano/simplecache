@@ -1,7 +1,7 @@
 # Simple Cache
 Simple in-memory type safe cache in Go (golang).
 
-It's not safe for concurrent use.
+It's not safe for concurrent use. You have to care of it by yourself.
 
 
 Usage:
